@@ -1,4 +1,4 @@
-declare enum TemperatureLocation {
+enum TemperatureLocation {
     Object = 0,
     Ambiant = 1,
 }
@@ -12,7 +12,7 @@ namespace gy {
     /**
      * Reads the temperature from the IR sensor MLX90614
      */
-    //% blockId=mlx90614 block="temperature %loc" shim=mlx90614::temperature
+    //% blockId=mlx90614 block="temperature %loc" 
     function temperature(loc: TemperatureLocation): number {
         return 0
     }
