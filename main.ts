@@ -1,18 +1,20 @@
+declare enum TemperatureLocation {
+    Object = 0,
+    Ambiant = 1,
+}
+
 /**
  * Work with the GY-906 component.
  */
-//% color=190 weight=100 icon="\uf1ec" block="GY-906 Blocks"
+//% color=190 weight=100 icon="\uf1ec" block="GY-906"
 namespace gy {
 
     /**
-    * TODO: initialization ring:bit car
-    * @param left describe parameter here, eg: AnalogPin.P1
-    * @param right describe parameter here, eg: AnalogPin.P2
-    */
-    //% weight=10
-    //% blockId=ringbitcar_init block="set left wheel at pin %left|right wheel at pin %right"
-    export function init_wheel(left: AnalogPin, right: AnalogPin): void {
-        // Add code here
-
+     * Reads the temperature from the IR sensor MLX90614
+     */
+    //% blockId=mlx90614 block="temperature %loc" shim=mlx90614::temperature
+    function temperature(loc: TemperatureLocation): number {
+        return 0
     }
+
 }
