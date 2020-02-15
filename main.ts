@@ -1,7 +1,7 @@
 /**
  * Work with the GY-906 component.
  */
-//% color=190 weight=100 icon="\uf1ec" block="Basic Blocks"
+//% color=190 weight=100 icon="\uf1ec" block="GY-906 Blocks"
 namespace gy {
 
     /**
